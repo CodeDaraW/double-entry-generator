@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/deb-sig/double-entry-generator/v2/pkg/analyser/bmo"
-	"github.com/deb-sig/double-entry-generator/v2/pkg/analyser/bocomcredit"
+	bocomcredit "github.com/deb-sig/double-entry-generator/v2/pkg/analyser/bocom_credit"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/analyser/ccb"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/analyser/citic"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/analyser/cmb"

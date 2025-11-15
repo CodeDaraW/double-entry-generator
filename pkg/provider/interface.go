@@ -20,7 +20,7 @@ import (
 	"fmt"
 
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/bmo"
-	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/bocomcredit"
+	bocomcredit "github.com/deb-sig/double-entry-generator/v2/pkg/provider/bocom_credit"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/ccb"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/citic"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/cmb"
