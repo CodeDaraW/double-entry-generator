@@ -3,7 +3,7 @@ package config
 import (
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/alipay"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/bmo"
-	bocomcredit "github.com/deb-sig/double-entry-generator/v2/pkg/provider/bocom_credit"
+	bocom_credit "github.com/deb-sig/double-entry-generator/v2/pkg/provider/bocom_credit"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/ccb"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/citic"
 	"github.com/deb-sig/double-entry-generator/v2/pkg/provider/cmb"
@@ -20,28 +20,28 @@ import (
 
 // Config is the global configuration.
 type Config struct {
-	Title                           string              `yaml:"title,omitempty"`
-	DefaultMinusAccount             string              `yaml:"defaultMinusAccount,omitempty"`
-	DefaultPlusAccount              string              `yaml:"defaultPlusAccount,omitempty"`
-	DefaultCashAccount              string              `yaml:"defaultCashAccount,omitempty"`
-	DefaultPositionAccount          string              `yaml:"defaultPositionAccount,omitempty"`
-	DefaultCommissionAccount        string              `yaml:"defaultCommissionAccount,omitempty"`
-	DefaultPnlAccount               string              `yaml:"defaultPnlAccount,omitempty"`
-	DefaultThirdPartyCustodyAccount string              `yaml:"defaultThirdPartyCustodyAccount,omitempty"`
-	DefaultCurrency                 string              `yaml:"defaultCurrency,omitempty"`
-	Alipay                          *alipay.Config      `yaml:"alipay,omitempty"`
-	Wechat                          *wechat.Config      `yaml:"wechat,omitempty"`
-	Huobi                           *huobi.Config       `yaml:"huobi,omitempty"`
-	Htsec                           *htsec.Config       `yaml:"htsec,omitempty"`
-	Hxsec                           *hxsec.Config       `yaml:"hxsec,omitempty"`
-	Icbc                            *icbc.Config        `yaml:"icbc,omitempty"`
-	Td                              *td.Config          `yaml:"td,omitempty"`
-	Bmo                             *bmo.Config         `yaml:"bmo,omitempty"`
-	BocomCredit                     *bocomcredit.Config `yaml:"bocom_credit,omitempty" mapstructure:"bocom_credit,omitempty"`
-	JD                              *jd.Config          `yaml:"jd,omitempty"`
-	Citic                           *citic.Config       `yaml:"citic,omitempty"`
-	HsbcHK                          *hsbchk.Config      `yaml:"hsbchk,omitempty"`
-	MT                              *mt.Config          `yaml:"mt,omitempty"`
-	CCB                             *ccb.Config         `yaml:"ccb,omitempty"`
-	Cmb                             *cmb.Config         `yaml:"cmb,omitempty"`
+	Title                           string               `yaml:"title,omitempty"`
+	DefaultMinusAccount             string               `yaml:"defaultMinusAccount,omitempty"`
+	DefaultPlusAccount              string               `yaml:"defaultPlusAccount,omitempty"`
+	DefaultCashAccount              string               `yaml:"defaultCashAccount,omitempty"`
+	DefaultPositionAccount          string               `yaml:"defaultPositionAccount,omitempty"`
+	DefaultCommissionAccount        string               `yaml:"defaultCommissionAccount,omitempty"`
+	DefaultPnlAccount               string               `yaml:"defaultPnlAccount,omitempty"`
+	DefaultThirdPartyCustodyAccount string               `yaml:"defaultThirdPartyCustodyAccount,omitempty"`
+	DefaultCurrency                 string               `yaml:"defaultCurrency,omitempty"`
+	Alipay                          *alipay.Config       `yaml:"alipay,omitempty"`
+	Wechat                          *wechat.Config       `yaml:"wechat,omitempty"`
+	Huobi                           *huobi.Config        `yaml:"huobi,omitempty"`
+	Htsec                           *htsec.Config        `yaml:"htsec,omitempty"`
+	Hxsec                           *hxsec.Config        `yaml:"hxsec,omitempty"`
+	Icbc                            *icbc.Config         `yaml:"icbc,omitempty"`
+	Td                              *td.Config           `yaml:"td,omitempty"`
+	Bmo                             *bmo.Config          `yaml:"bmo,omitempty"`
+	BocomCredit                     *bocom_credit.Config `yaml:"bocom_credit,omitempty" mapstructure:"bocom_credit,omitempty"`
+	JD                              *jd.Config           `yaml:"jd,omitempty"`
+	Citic                           *citic.Config        `yaml:"citic,omitempty"`
+	HsbcHK                          *hsbchk.Config       `yaml:"hsbchk,omitempty"`
+	MT                              *mt.Config           `yaml:"mt,omitempty"`
+	CCB                             *ccb.Config          `yaml:"ccb,omitempty"`
+	Cmb                             *cmb.Config          `yaml:"cmb,omitempty"`
 }
