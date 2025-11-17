@@ -136,9 +136,9 @@ test-bmo-ledger: ## Run tests for BMO provider against ledger compiler
 	@$(SHELL) ./test/bmo-test-ledger.sh
 
 test-bocomcredit-beancount: ## Run tests for Bocom Credit provider against beancount compiler
-       @$(SHELL) ./test/bocomcredit-test-beancount.sh
+	@$(SHELL) ./test/bocomcredit-test-beancount.sh
 test-bocomcredit-ledger: ## Run tests for Bocom Credit provider against ledger compiler
-       @$(SHELL) ./test/bocomcredit-test-ledger.sh
+	@$(SHELL) ./test/bocomcredit-test-ledger.sh
 
 test-citic-beancount: ## Run tests for CITIC provider against beancount compiler
 	@$(SHELL) ./test/citic-test-beancount.sh
